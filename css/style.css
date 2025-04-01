@@ -8,32 +8,14 @@
 
     header {
         text-align: center;
-        padding: 10px; /* Reduz o padding do cabeçalho */
-        background: #333;
+        padding: 10px;
+        background-color: #24aca4; /* Corrigido para background-color */
         color: white;
     }
 
-    nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 5px 0; /* Reduz a margem da navegação */
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 5px; /* Reduz o espaçamento entre os links */
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        padding: 8px; /* Reduz o padding dos links */
-        background: #555;
-        border-radius: 5px;
-        font-size: 0.9em; /* Reduz o tamanho da fonte dos links */
-    }
-
-    nav ul li a:hover {
-        background: #777;
+    /* Remove a navegação */
+    nav {
+        display: none;
     }
 
     main {
@@ -53,11 +35,6 @@
     }
 
     @media (max-width: 768px) {
-        nav ul {
-            flex-direction: column;
-            align-items: center;
-        }
-
         .conteudo {
             padding: 10px;
         }
@@ -66,31 +43,61 @@
     /* Ajustes para dispositivos móveis (até 600px de largura) */
     @media (max-width: 600px) {
         header {
-            padding: 5px; /* Reduz ainda mais o padding do cabeçalho */
-        }
-
-        nav ul {
-            flex-direction: column;
-            align-items: stretch;
-            gap: 2px; /* Reduz ainda mais o espaçamento entre os links */
-        }
-
-        nav ul li a {
-            padding: 6px; /* Reduz ainda mais o padding dos links */
-            font-size: 0.85em; /* Reduz ainda mais o tamanho da fonte dos links */
+            padding: 5px;
         }
 
         h1 {
-            font-size: 1.2em; /* Reduz o tamanho da fonte do título */
-            margin-bottom: 3px; /* Reduz a margem inferior do título */
+            font-size: 1.2em;
+            margin-bottom: 3px;
         }
 
         h2 {
-            font-size: 1.1em; /* Reduz o tamanho da fonte dos títulos das seções */
+            font-size: 1.1em;
         }
 
         .conteudo {
-            font-size: 0.9em; /* Reduz o tamanho da fonte do conteúdo */
+            font-size: 0.9em;
         }
+    }
+
+    /* Estilos para a seção "Sobre" */
+    #sobre {
+        background: #f0f0f0;
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 8px;
+    }
+
+    #sobre h2 {
+        color: #24aca4; /* Cor atualizada */
+        border-bottom: 2px solid #24aca4; /* Cor atualizada */
+        padding-bottom: 10px;
+    }
+
+    #sobre p {
+        line-height: 1.6;
+        color:#000000;
+    }
+
+    #sobre ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    #sobre li {
+        margin-bottom: 5px;
+    }
+
+    #sobre strong {
+        font-weight: bold;
+        color:#000000;
+    }
+    
+    .integrante-card h3 {
+        color:#000000;
+    }
+    
+    .integrante-card p{
+        color:#000000;
     }
 </style>
