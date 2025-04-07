@@ -1,282 +1,122 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transtorno de Personalidade Narcisista</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        header {
-            text-align: center;
-            padding: 10px;
-            background-color: #24aca4;
-            color: white;
-        }
+    header {
+        text-align: center;
+        padding: 10px;
+        background-color: #24aca4;
+        color: white;
+    }
 
-        nav {
-            display: none;
-        }
+    /* Remove a navegação */
+    nav {
+        display: none;
+    }
 
-        main {
-            padding: 20px;
-        }
+    main {
+        padding: 20px;
+    }
 
+    .conteudo {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        margin: 10px auto;
+    }
+
+    @media (max-width: 768px) {
         .conteudo {
-            max-width: 800px;
-            margin: 0 auto;
             padding: 10px;
         }
+    }
 
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
+    /* Ajustes para dispositivos móveis (até 600px de largura) */
+    @media (max-width: 600px) {
+        header {
+            padding: 5px;
         }
 
-        @media (max-width: 768px) {
-            .conteudo {
-                padding: 10px;
-            }
-        }
-
-        @media (max-width: 600px) {
-            header {
-                padding: 5px;
-            }
-
-            h1 {
-                font-size: 1.2em;
-                margin-bottom: 3px;
-            }
-
-            h2 {
-                font-size: 1.1em;
-            }
-
-            .conteudo {
-                font-size: 0.9em;
-            }
-        }
-
-        #sobre {
-            background: #f0f0f0;
-            padding: 20px;
-            margin-top: 30px;
-            border-radius: 8px;
-        }
-
-        #sobre h2 {
-            color: #24aca4;
-            border-bottom: 2px solid #24aca4;
-            padding-bottom: 10px;
-        }
-
-        #sobre p {
-            line-height: 1.6;
-            color: #000000;
-        }
-
-        #sobre ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        #sobre li {
+        h1 {
+            font-size: 1.4em;
             margin-bottom: 5px;
         }
 
-        #sobre strong {
-            font-weight: bold;
-            color: #000000;
+        h2 {
+            font-size: 1.2em;
         }
 
-        .integrante-card h3 {
-            color: #000000;
+        .conteudo {
+            font-size: 1em;
+            padding: 8px;
         }
 
-        .integrante-card p {
-            color: #000000;
+        .integrante-card {
+            padding: 10px;
         }
+    }
 
-        @media (min-width: 769px) {
-            .conteudo {
-                text-align: justify;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Transtorno de Personalidade Narcisista</h1>
-    </header>
+    /* Estilos para a seção "Sobre" */
+    #sobre {
+        background: #f0f0f0;
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 8px;
+    }
 
-    <main>
-        <section id="o-que-e">
-            <h2>O que é o TPN?</h2>
-            <div class="conteudo">
-                <p>O Transtorno de Personalidade Narcisista (TPN) é uma condição psiquiátrica caracterizada por um padrão de grandiosidade, necessidade de admiração constante e falta de empatia. Indivíduos com TPN tendem a ter relacionamentos conturbados, pois buscam reconhecimento excessivo e se sentem superiores aos outros. As causas não são totalmente conhecidas, mas envolvem fatores genéticos, ambientais e neurológicos.</p>
-                <img src="imagens/505.jpg" alt="Ilustração sobre Transtorno de Personalidade Narcisista">
-            </div>
-        </section>
+    #sobre h2 {
+        color: #24aca4;
+        border-bottom: 2px solid #24aca4;
+        padding-bottom: 10px;
+    }
 
-        <section id="sintomas">
-            <h2>Sintomas</h2>
-            <div class="conteudo">
-                <ul>
-                    <li><strong>Falta de empatia:</strong> Dificuldade em reconhecer sentimentos dos outros.</li>
-                    <li><strong>Grandiosidade:</strong> Tendência a exagerar conquistas e menosprezar os outros.</li>
-                    <li><strong>Exigência de privilégios:</strong> Expectativa de tratamento especial.</li>
-                    <li><strong>Busca por aplausos:</strong> Desejo constante de admiração.</li>
-                    <li><strong>Exploração dos outros:</strong> Relacionamentos baseados em benefício próprio.</li>
-                </ul>
-                <img src="imagens/10.jpg" alt="Sintomas do Transtorno de Personalidade Narcisista">
-            </div>
-        </section>
+    #sobre p {
+        line-height: 1.6;
+    }
 
-        <section id="causas">
-            <h2>Causas</h2>
-            <div class="conteudo">
-                <p>O TPN pode ter origem genética, ambiental e neurológica. A genética influencia predisposições herdadas, enquanto fatores ambientais, como criação rígida ou permissiva e traumas, moldam a personalidade. Na neurobiologia, o transtorno pode estar ligado a falhas na regulação emocional e no comportamento.</p>
-                <img src="imagens/15.jpg" alt="Causas do Transtorno de Personalidade Narcisista">
-            </div>
-        </section>
+    #sobre ul {
+        list-style: none;
+        padding: 0;
+    }
 
-        <section id="tratamento">
-            <h2>Tratamento</h2>
-            <div class="conteudo">
-                <p>O diagnóstico envolve a análise de traços de personalidade e padrões comportamentais. A psicoterapia é o tratamento mais indicado, ajudando o paciente a reconhecer padrões de pensamento narcisistas e buscar mudanças comportamentais. Terapias voltadas ao desenvolvimento da empatia e do autoconhecimento são eficazes para tratar o transtorno.</p>
-                <img src="imagens/14.jpg" alt="Tratamento para o Transtorno de Personalidade Narcisista">
-            </div>
-        </section>
+    #sobre li {
+        margin-bottom: 5px;
+    }
 
-        <section id="como-lidar">
-            <h2>Como lidar com um narcisista?</h2>
-            <div class="conteudo">
-                <p>Lidar com uma pessoa narcisista exige estratégias para manter o equilíbrio emocional e evitar manipulações. Em ambientes de trabalho, eles podem ser exigentes e centralizadores. Em relacionamentos, tendem a buscar controle e superioridade. Algumas formas de lidar incluem:</p>
-                <ul>
-                    <li><strong>Definir limites claros:</strong> Não permitir manipulações emocionais.</li>
-                    <li><strong>Evitar confrontos desnecessários:</strong> Narcisistas tendem a ver disputas como oportunidades de autoafirmação.</li>
-                    <li><strong>Não alimentar a necessidade de reconhecimento:</strong> Manter uma postura neutra pode desestimular atitudes narcisistas.</li>
-                    <li><strong>Sugerir ajuda profissional:</strong> Encaminhar para psicoterapia pode ser uma solução saudável.</li>
-                </ul>
-                <img src="imagens/11.jpg" alt="Como lidar com um narcisista">
-            </div>
-        </section>
+    #sobre strong {
+        font-weight: bold;
+    }
 
-        <section id="mitos-fatos">
-            <h2>Mitos e Fatos sobre o TPN</h2>
-            <div class="conteudo">
-                <p>Existem muitos mitos sobre os narcisistas. Aqui estão alguns desmentidos:</p>
-                <ul>
-                    <li><strong>Mito 1:</strong> "Todos os narcisistas são extremamente autoconfiantes." <br> <strong>Fato 1:</strong> Muitos têm autoestima instável e usam a grandiosidade como defesa.</li>
-                    <li><strong>Mito 2:</strong> "Narcisistas sempre querem prejudicar os outros." <br> <strong>Fato 2:</strong> Muitas vezes, o dano é um efeito colateral de suas atitudes egocêntricas.</li>
-                    <li><strong>Mito 3:</strong> "Todos os narcisistas são manipuladores mestres." <br> <strong>Fato 3:</strong> Nem todos são estrategistas; muitos aprendem manipulação por tentativa e erro.</li>
-                    <li><strong>Mito 4:</strong> "Narcisistas são predadores emocionais." <br> <strong>Fato 4:</strong> Eles podem ser insensíveis e egoístas, mas nem sempre agem por maldade deliberada.</li>
-                    <li><strong>Mito 5:</strong> "Narcisistas são sempre charmosos." <br> <strong>Fato 5:</strong> Alguns podem ser carismáticos, mas outros são apenas arrogantes e egocêntricos.</li>
-                </ul>
-                <img src="imagens/12.jpg" alt="Mitos e Fatos sobre o TPN">
-            </div>
-        </section>
+    /* Estilos para os cards dos integrantes */
+    .integrante-card {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 15px;
+        text-align: center;
+    }
 
-        <section id="filmes">
-            <h2>Filmes sobre narcisismo</h2>
-            <div class="conteudo">
-                <p>O narcisismo é um tema explorado em várias obras cinematográficas. Um exemplo é <em>Ted Bundy: A Irresistível Face do Mal</em>, que retrata o caso real do serial killer Ted Bundy. Ele exibia traços de narcisismo perverso, necessitando de admiração e exercendo controle extremo sobre suas vítimas.</p>
-                <img src="imagens/13.jpg" alt="Filmes sobre narcisismo">
-            </div>
-        </section>
+    .integrante-card h3 {
+        color: #000; /* Preto para melhor legibilidade */
+    }
 
-        <section id="conclusao">
-            <h2>Conclusão</h2>
-            <p>O narcisismo é um transtorno que prejudica tanto o indivíduo quanto seus relacionamentos, gerando sofrimento nas vítimas. A necessidade de atenção e o egoísmo do narcisista tornam as relações tóxicas. Para lidar com isso, é crucial identificar os traços narcisistas e evitar comportamentos que os reforcem. A intervenção psicológica é fundamental para entender as causas do transtorno e ajudar o indivíduo a mudar seu comportamento, promovendo relações mais saudáveis.</p>
-        </section>
+    .integrante-card p {
+        color: #333; /* Cinza escuro para suavizar */
+    }
 
-        <section id="materiais-extra">
-            <h2>Materiais Extra</h2>
-            <h3>Filmes</h3>
-            <ul>
-                <li><a href="https://youtu.be/SgGMhoovWYU?list=PLc6FjlGEB8UErkuVBrGeg_vpwEB8mCNBs" target="_blank">O Lobo de Wall Street (2013)</a></li>
-                <li><a href="https://youtu.be/HXV3dipeWJA" target="_blank">Garota Exemplar (2014)</a></li>
-                <li><a href="https://youtu.be/SK0LERsUYEw" target="_blank">Psicopata Americano (2000)</a></li>
-                <li><a href="https://youtu.be/8KcIWhBEEGE" target="_blank">Cisne Negro (2010)</a></li>
-                <li><a href="https://youtu.be/JmTYYKV130w" target="_blank">Whiplash: Em Busca da Perfeição (2014)</a></li>
-            </ul>
-
-            <h3>Livros</h3>
-            <ul>
-                <li><a href="https://amzn.to/42bSfMm" target="_blank">A Nova Ciência do Narcisismo</a></li>
-                <li><a href="https://amzn.to/3RryifB" target="_blank">Como se libertar de um narcisista</a></li>
-                <li><a href="https://amzn.to/4iVUI54" target="_blank">Corra e não olhe para trás</a></li>
-            </ul>
-
-            <h3>Artigos</h3>
-            <ul>
-                <li><a href="https://iptc.net.br/transtorno-de-personalidade-narcisista/" target="_blank">Transtorno de personalidade narcisista: o que é</a></li>
-                <li><a href="https://drauziovarella.uol.com.br/doencas-e-sintomas/transtorno-de-personalidade-narcisista-o-que-e-e-formas-de-tratamento/" target="_blank">Transtorno de personalidade narcisista: sintomas, causas e tratamento</a></li>
-                <li><a href="https://revistagalileu.globo.com/sociedade/comportamento/noticia/2024/12/como-lidar-com-um-narcisista-em-casa-e-no-trabalho-segundo-a-ciencia.ghtml" target="_blank">Narcisismo: o que é e como lidar com pessoas narcisistas</a></li>
-            </ul>
-
-            <h3>Vídeos</h3>
-            <ul>
-                <li><a href="https://youtu.be/jGZq5Zh3aFM" target="_blank">O que é Transtorno de Personalidade Narcisista?</a></li>
-                <li><a href="https://youtu.be/uSTyx45Y9Po" target="_blank">Como lidar com pessoas narcisistas?</a></li>
-                <li><a href="https://youtu.be/jZjRqlrQQQE" target="_blank">O narcisista e a vítima: o ciclo do abuso narcisista</a></li>
-            </ul>
-
-            <h3>Recursos Adicionais</h3>
-            <ul>
-                <li><a href="https://www.abp.org.br/" target="_blank">Associação Brasileira de Psiquiatria (ABP)</a></li>
-                <li><a href="https://site.cfp.org.br/" target="_blank">Conselho Federal de Psicologia (CFP)</a></li>
-                <li><a href="https://www.psychiatry.org/psychiatrists/practice/dsm" target="_blank">Manual Diagnóstico e Estatístico de Transtornos Mentais (DSM-5)</a></li>
-            </ul>
-        </section>
-
-         <section id="sobre">
-            <h2>Sobre o Projeto</h2>
-            <img src="imagens/logo_sesi_blue.png" alt="Logo SESI Blue" style="width: 150px; display: block; margin: 0 auto 20px;">
-            <p>Este projeto foi desenvolvido pelo Grupo 4 - 4ª Turma Novo EJA SESI Educação, como parte de um trabalho escolar sobre o Transtorno de Personalidade Narcisista.</p>
-            <div class="integrante-card">
-                <h3>Professora Gabriela Paviani</h3>
-                <p>Coordenadora do Projeto</p>    
-            </div>
-
-            <div class="integrante-card">
-                <h3>Alvino Barbosa Buriti</h3>
-                <p>Edição e diagramação</p>
-            </div>
-
-            <div class="integrante-card">
-                <h3>Alberto Rafael Da Silva</h3>
-                <p>Coleta de informações audiovisuais</p>
-            </div>
-
-            <div class="integrante-card">
-                <h3>Tomas Henrique dos Santos</h3>
-                <p>Coleta de informações textuais</p>
-            </div>
-
-            <div class="integrante-card">
-                <h3>Edivaldo Batista</h3>
-                <p>Coleta de informações fotográficas</p>
-            </div>
-
-            <div class="integrante-card">
-                <h3>Doriedso Carlos Batista</h3>
-                <p>Material de divulgação</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 - Grupo 4 - 4ª Turma - Novo EJA SESI Educação - Matão, São Paulo, Brasil</p>
-    </footer>
-
-    <script src="js/script.js"></script>
-</body>
-</html>
+    /* Efeito hover nos títulos */
+    h2:hover {
+        color: #1b837e;
+        transition: 0.3s;
+    }
